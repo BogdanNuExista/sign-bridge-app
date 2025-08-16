@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "SignBridge",
+    "slug": "sign-bridge-app",
+    "scheme": "signbridge",
+    "version": "0.1.0",
+    "orientation": "portrait",
+  "sdkVersion": "52.0.0",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#09090B"
+    },
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      ["expo-router"],
+      ["expo-camera"],
+      ["expo-image-picker"]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#09090B"
+      },
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+  "package": "com.signbridge.app",
+  "newArchEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
